@@ -6,8 +6,8 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 ruby '1.9.3'
 
-gem 'crowdblog', '~> 0.3.2'
-#gem 'crowdblog', :path => '../crowdblog'
+# gem 'crowdblog', '~> 0.3.2'
+gem 'crowdblog', :git => 'git://github.com/ingilniero/crowdblog.git', :branch => 'pagination'
 gem 'crowdint_auth', '~> 0.0.3'
 gem 'dalli'
 gem 'devise'
@@ -19,6 +19,7 @@ gem 'quiet_assets'
 gem 'sunspot_rails'
 gem 'unicorn'
 gem 'yui-compressor'
+gem 'kaminari'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -51,6 +52,7 @@ group :development, :test do
   gem 'sunspot_solr'
   gem 'sqlite3'
   gem 'taps'
+  gem 'meta_request'
 end
 
 group :production do

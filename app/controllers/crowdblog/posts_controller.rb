@@ -1,7 +1,7 @@
 class Crowdblog::PostsController < ApplicationController
 
   def index
-    @posts = Crowdblog::Post.for_index
+    @posts = Crowdblog::Post.for_index(params[:page])
     @history = Crowdblog::Post.for_history - @posts
   end
 

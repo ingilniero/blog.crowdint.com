@@ -1,5 +1,6 @@
 .posts
   = render @posts, index_view: true
+  = paginate @posts
 
 - if Rails.env.production?
   coffee:
